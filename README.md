@@ -45,6 +45,13 @@ bundle install
 bundle exec rake db:create db:migrate
 ```
 
+#### Import Pokemon Data From PokeAPI
+
+```sh
+bundle exec rake pokemon_type:import
+bundle exec rake pokemon:import
+```
+
 ### Start the Application
 
 ```sh
