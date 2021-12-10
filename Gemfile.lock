@@ -90,6 +90,8 @@ GEM
       rainbow (>= 2.0.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    jsonapi-serializers (1.0.1)
+      activesupport
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -201,6 +203,7 @@ DEPENDENCIES
   byebug
   factory_bot_rails
   httplog
+  jsonapi-serializers
   listen (~> 3.2)
   poke-api-v2
   puma (~> 4.1)
@@ -217,4 +220,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.1.4
+   2.2.32

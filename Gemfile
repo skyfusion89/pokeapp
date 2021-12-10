@@ -21,6 +21,7 @@ gem 'puma', '~> 4.1'
 
 # Use Active Resource for object-relational mapping for REST
 gem 'activeresource'
+gem 'jsonapi-serializers'
 # Use httplog to log all HTTP requests performed
 gem 'httplog'
 # A simplified interface for interacting with the PokéAPI. Read more: https://github.com/rdavid1099/poke-api-v2
