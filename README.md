@@ -1,24 +1,66 @@
-# README
+# Poke App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails API serving data, imported from [Poke API](https://pokeapi.co/)
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+* Ruby. Install it with [rbenv](https://github.com/rbenv/rbenv) or [rvm](https://rvm.io). Check [.ruby-verion](.ruby-version) for the required version.
 
-* System dependencies
+## Getting Started
 
-* Configuration
+This guide outlines the steps needed to start PokeApp.
 
-* Database creation
+### Basic System Setup
 
-* Database initialization
+For the `pokeapp` repository on GitHub under your username. You'll end up with something like `your_user_name/pokeapp`.
 
-* How to run the test suite
+Clone the forked repository to your development machine:
 
-* Services (job queues, cache servers, search engines, etc.)
+```sh
+git clone git@github.com:your_user_name/pokeapp.git
+```
 
-* Deployment instructions
+and add a git remote with the git URL of the main fidor repository:
 
-* ...
+```sh
+git remote add upstream git@github.com:skyfusion89/pokeapp.git
+```
+
+Finally, install the Ruby version as used by the application. This information is defined in `.ruby-version` file at the root of the repository.git
+
+### Application Setup
+
+Execute the following steps.
+
+#### Install the GEM dependencies
+
+```sh
+gem install bundler
+bundle install
+```
+
+#### Setup Database
+
+```sh
+bundle exec rake db:create db:migrate
+```
+
+### Start the Application
+
+```sh
+bundle exec rails s
+```
+
+Now you can hit http://localhost:3000 in your favourite browser!
+
+## Running the PokeApp Tests
+
+To run the RSpec tests:
+
+```sh
+bundle exec rspec
+```
+
+## Heroku Deployment
+
+[PokeApp]() on Heroku

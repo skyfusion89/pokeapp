@@ -16,6 +16,12 @@ namespace :pokemon do
           base_experience: temp_pokemon.base_experience,
           is_default: temp_pokemon.is_default
         )
+        temp_pokemon.types.each do |pokemon_type|
+          type = Type.find_by(name: pokemon_type.type.name)
+
+          Pokemon.find(pokemon.id).types.destroy_all
+          pokemon.pokemon_types.find_or_create_by(pokemon_id: pokemon, type_id: type.id)
+        end
       end
       page+=1
     end
