@@ -20,7 +20,7 @@ Clone the forked repository to your development machine:
 git clone git@github.com:your_user_name/pokeapp.git
 ```
 
-and add a git remote with the git URL of the main fidor repository:
+and add a git remote with the git URL of the main repository:
 
 ```sh
 git remote add upstream git@github.com:skyfusion89/pokeapp.git
