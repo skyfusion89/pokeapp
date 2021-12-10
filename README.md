@@ -70,4 +70,4 @@ bundle exec rspec
 
 ## Heroku Deployment
 
-[PokeApp]() on Heroku
+[PokeApp](https://rocky-ocean-71991.herokuapp.com/pokemons) on Heroku
